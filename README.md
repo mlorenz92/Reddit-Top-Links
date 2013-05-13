@@ -19,7 +19,11 @@ Once both are downloaded you will need to create your virtual environment. It ca
 
 	$ mkvirtualenv reddit
 
-Now you can intall the proper dependencies in this virtual environment so it doesn't interact with other projects you may be running. 
+Now you can intall the proper dependencies in this virtual environment so it doesn't interact with other projects you may be running. To enter into the virtual environment simply type 
+	
+	$ workon reddit
+
+and (reddit) should appear before your location on the command line. This means that you are successfully within your virtual environment and any dependencies you install will remain exclusive to this environmnent and that you will need to make sure you are within your environment to run the code successfully.  
 
 ### How To Install Dependencies
 
@@ -44,3 +48,16 @@ or you can download it via git
 	git clone git://github.com/webpy/webpy.git
 	ln -s `pwd`/webpy/web .
 
+Once installed cd to the directory in which your repository is located and run
+
+	run server.py
+
+After that switch to any browser you want and go to 
+	
+	http://0.0.0.0:8080/
+
+###What does it look like?
+
+Once running and everything is installed correctly the site should look like this. 
+
+![image](http://i.imgur.com/ul07UPj.png)
