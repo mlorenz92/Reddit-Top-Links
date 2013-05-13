@@ -2,13 +2,46 @@ $def with (redditLinks)
 <html>
 <head>
 	<title>Top Reddit Links</title>
+	<style type='text/css'>
+		body {
+		background: url(static/background.jpg);
+		}
+
+		div.box {
+			width: 1000px;
+			margin: auto;
+			padding: 20px;
+			border: 1px dotted grey;
+			background-color: #ffffff;
+			font-family: "HelveticaNeue-Light";
+		}
+
+		div.reddit {
+			margin: auto;
+			background-color: #EEE;
+			padding: 20px;
+			font-size: 12px;
+			font-family: Consolas, "Liberation Mono", Courier, monospace;
+			border: 1px solid #ddd;
+		}
+
+		a:link {color: #000;}
+		a:visited {color: #000;}
+		a:active {color: #DDD;} 
+		a:hover {color: #DDD;} 
+	</style>
 </head>
 <body>
-	<h1>Reddit Top Link</h1>
-	<p>This is a little app that I designed to see what the top link on reddit it at any time. Do you want to see what the top link is?<p>
-	<h3>The Current Top Post On Reddit Is:</h3>
-	$redditLinks
-	<br>
-	<p>Want to check out the documentation behind this web page? Check out my <a href="http://github.com/mlorenz92/Reddit-Top-Links">Github account</a> to see how the API, the framework, and the code works. 
+	<div class='box'>
+		<h1 align='center'>Reddit Top Link</h1>
+		<hr>
+		<p>This is a little app that I designed to see what the top link on reddit it at any time. It was created for Liel Leibovitz's Digital Literacy class at NYU. I decided to create this project because I wanted to learn how to interact with API's and I wanted a personalized app that I could use to see what the top link on reddit is. Do you want to see what the top link is?<p>
+		<h3>The Current Top Post On Reddit Is:</h3>
+			<div class="reddit">
+				$redditLinks
+			</div>
+		<br>
+		<p>Want to check out the documentation behind this web page? Check out my <a href="http://github.com/mlorenz92/Reddit-Top-Links">Github account</a> to see how the API, the framework, and the code works. 
+	</div>
 </body>
 </html>

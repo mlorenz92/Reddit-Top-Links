@@ -14,7 +14,7 @@ class index:
 
 	def GET(self):
 
-		redditLinks= redditParser().main()  
+		redditLinks= redditParser().main()
 
 		return render.index(redditLinks)
 
@@ -25,7 +25,7 @@ class links:
 		redditLinks= redditParser().main()
 
 
-#info().GET()
+index().GET()
 
 if __name__ == "__main__": 
     app = web.application(urls, globals())
